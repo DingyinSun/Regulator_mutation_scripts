@@ -7,7 +7,7 @@ The gene names annotated by Abricate using self-made database is different to an
  
 For M55_regulator_gene_mutation study, I will get all **locus_tag** for  M55_reference_genome (NZ_CP035430) regulator genes, and use this **locus_tag** to find out the corresponding name annotated by panaroo/prokka. (note: could use other ERR's **locus_tag** , which should gives the same result). 
 
- **Expected output**: locus_tag_list.txt, list of regulator genes in the first column, and corresponding locus_tag in the second column.
+ **Expected output: locus_tag_list.txt**, list of regulator genes in the first column, and corresponding locus_tag in the second column.
  
 
 ### Step 2. Run get_annotated_name.sh
