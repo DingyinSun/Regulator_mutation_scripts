@@ -12,8 +12,10 @@ For M55_regulator_gene_mutation study, I will get all **locus_tag** for  M55_ref
 
 ### Step 2. Run get_annotated_name.sh
 1. Before running this code, needs to copy **gene_presence_absence_roary.csv** (from panaroo) to the directory where this script will run from.
-2. Needs to convert the default .csv file to tab-delimited file (.txt). (Cau using Excel export function)
+2. Needs to convert the default .csv file to tab-delimited file (.txt). (Can using Excel export function)
 3. Run **get_annotated_name.sh**
+
+**Expected output: annotated_name_list.txt**, list of regulator genes annotated by Abricate in the first column, panaroo/prokka annotation in the second column.
 
 
 
