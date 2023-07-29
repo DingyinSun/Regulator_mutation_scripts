@@ -33,7 +33,17 @@ Can use: ***for file in *.clstr; do clstr2txt.pl ${file} > ${file%.clstr}.txt; d
 
 **number_of_cluster.sh** will gives a **number_of_cluster.txt** file, in which the regulator gene will be in the first column, and number of cluster for this gene in the second column.
 
-**sequence_extraction.sh** will gives 
+**sequence_extraction.sh** will gives:
+1. **.txt** file, that contains a list of unprocessed representative ERRs. 
+2. **.list** file, that contains a list of processed representative ERRs. 
+3. **.fa** file, that contains representative ERRs and its nucleotide sequences.
+4. **_split_files** folder that contains multiple fasta files, each containing a representative ERRs and its nucleotide sequence.
+
+**get_ERR_for_each_Cluster.sh** will gives **Cluster_ERR_list.txt** file, with genes in the first column, a representative ERRs from each Cluster in column 2,3....
+
+**translate_nucleic_acid.sh** will translates nucleotide sequence from each **.fasta** to protein sequence. All translated protein sequence can be found in **translated_peptide** folder.
+
+
 
 
 
