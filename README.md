@@ -8,4 +8,10 @@ Assume had already run Abricate to identify the presence and absence of each reg
 ### Step 2. Run get_annotated_name.sh
 
 
-### Step 3. 
+
+
+### Step 3. Run CD-HIT.sh
+
+
+
+### Step 4. post-processing CD-HIT result
