@@ -1,3 +1,4 @@
+grep "NZ" ../../M55_two_component_regulators.txt > NZ_TCS.txt
 while read -r p; 
 do
 start=$(echo "${p}" | cut -f3)
