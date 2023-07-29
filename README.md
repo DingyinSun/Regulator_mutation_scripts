@@ -11,17 +11,22 @@ For M55_regulator_gene_mutation study, I will get all **locus_tag** for  M55_ref
  
 
 ### Step 2. Run get_annotated_name.sh
-1. Before running this code, needs to copy **gene_presence_absence_roary.csv** (from panaroo) to the directory where this script will run from.
+Before running this script, needs to:
+1. Copy **gene_presence_absence_roary.csv** (from panaroo) to the directory where this script will run from.
 2. Needs to convert the default .csv file to tab-delimited file (.txt). (Can using Excel export function)
 3. Run **get_annotated_name.sh**
 
 **Expected output: annotated_name_list.txt**, list of regulator genes annotated by Abricate in the first column, panaroo/prokka annotation in the second column.
 
 
-
-
 ### Step 3. Run CD-HIT.sh
+Before running this script, needs to:
+1. copy **aligned_gene_sequences** folder (from panaroo) to the directory where this script will run from.
+2. run **remove_gap_in_alnfas.sh** to remove gap within each .aln.fa file. (Because CD-HIT don't like "-" character).
+3. run **CD-HIT.sh**
 
+**Expected output: _hit and _hit.clstr** for each regulator gene. 
+Can use **for file in *.clstr; do clstr2txt.pl ${file} > ${file%.clstr}.txt; done** to turn .clstr to a table. 
 
 
 ### Step 4. post-processing CD-HIT result
