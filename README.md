@@ -48,7 +48,7 @@ Can use: ***for file in *.clstr; do clstr2txt.pl ${file} > ${file%.clstr}.txt; d
 **characterise_mutation_type.sh** will characterise mutations into three sub-categories, Synonymous_mutation, Nonsynonymous_mutation, and other_mutation. The result can be found in **characterise_mutation_type.txt**
 
 **ready_for_R.sh** helps convert and concatenate **.clstr** file in more R friendly format.
-It is recommended to copy all **.clstr** to a empty folder that contain **ready_for_R.sh**, because this script will produce many many .csv file.
+It is recommended to copy all **.clstr** to an empty folder that contain **ready_for_R.sh**, because this script will produce many many .csv file.
 
 
 
