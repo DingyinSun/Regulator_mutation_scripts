@@ -1,3 +1,4 @@
+mkdir sequence_ID_list
 while read -r p; do
   number=$(echo "${p}"| cut -f2)
   gene=$(echo "${p}"| cut -f1)
