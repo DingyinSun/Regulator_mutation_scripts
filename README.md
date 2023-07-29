@@ -43,6 +43,11 @@ Can use: ***for file in *.clstr; do clstr2txt.pl ${file} > ${file%.clstr}.txt; d
 
 **translate_nucleic_acid.sh** will translates nucleotide sequence from each **.fasta** to protein sequence. All translated protein sequence can be found in **translated_peptide** folder.
 
+**blastp.sh** will compare protein sequences for each Cluster's representative ERRs. The output can be found in **blastp_out** folder. 
+
+**characterise_mutation_type.sh** will characterise mutations into three sub-categories, Synonymous_mutation, Nonsynonymous_mutation, and other_mutation. The result can be found in **characterise_mutation_type.txt**
+
+
 
 
 
