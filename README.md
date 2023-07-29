@@ -27,7 +27,15 @@ Before running this script, needs to:
 
 **Expected output: _hit and _hit.clstr** for each regulator gene. 
 
-Can use:**for file in *.clstr; do clstr2txt.pl ${file} > ${file%.clstr}.txt; done**to turn .clstr into a table. 
-
+Can use: ***for file in *.clstr; do clstr2txt.pl ${file} > ${file%.clstr}.txt; done*** to turn .clstr into a table. 
 
 ### Step 4. post-processing CD-HIT result
+
+**number_of_cluster.sh** will gives a **number_of_cluster.txt** file, in which the regulator gene will be in the first column, and number of cluster for this gene in the second column.
+
+**sequence_extraction.sh** will gives 
+
+
+
+
+
