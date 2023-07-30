@@ -33,7 +33,7 @@ Can use: ***for file in *.clstr; do clstr2txt.pl ${file} > ${file%.clstr}.txt; d
 
 **number_of_cluster.sh** will gives a **number_of_cluster.txt** file, in which the regulator gene will be in the first column, and number of cluster for this gene in the second column.
 
-**sequence_extraction.sh** will gives:
+**sequence_extraction.sh** will gives:  (NOTE: this will only extract ERRs that have more than 1 Clusters!) 
 1. **.txt** file, that contains a list of unprocessed representative ERRs. 
 2. **.list** file, that contains a list of processed representative ERRs. 
 3. **.fa** file, that contains representative ERRs and its nucleotide sequences.
