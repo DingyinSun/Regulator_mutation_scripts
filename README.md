@@ -31,6 +31,8 @@ Before running this script, needs to:
 2. run **remove_gap_in_alnfas.sh** to remove gap within each .aln.fa file. (Because CD-HIT don't like "-" character).
 3. run **CD-HIT.sh**
 
+Set threshold parameter -c and -s to 1 is to make sure that all sequences within the same CD-HIT cluster are exactly same in their sequence identity and sequence length.
+
 **Expected output: _hit and _hit.clstr** for each regulator gene. 
 
 Can use: **for file in .clstr; do clstr2txt.pl ${file} > ${file%.clstr}.txt; done** to turn .clstr into a table. 
