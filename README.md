@@ -18,7 +18,7 @@ Before running this script, needs to:
 
 **Expected output: annotated_name_list.txt**, list of regulator genes annotated by Abricate in the first column, panaroo/prokka annotation in the second column.
 
-***It is worth to run double_check_nomanclature.sh before running CD-HIT.sh to check if panaroo-name and Abricate-name is correspond.***  ***Please note: double_check_nomanclature.sh may run for more than 2 hrs.....***
+****It is worth to run double_check_nomanclature.sh before running CD-HIT.sh to check if panaroo-name and Abricate-name is correspond.****  ****Please note: double_check_nomanclature.sh may run for more than 2 hrs.....****
 
 
 ### Step 3. Run CD-HIT.sh   with (-c 1 -s 1)
