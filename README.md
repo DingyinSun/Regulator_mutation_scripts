@@ -19,7 +19,7 @@ Before running this script, needs to:
 **Expected output: annotated_name_list.txt**, list of regulator genes annotated by Abricate in the first column, panaroo/prokka annotation in the second column.
 
 
-### Step 3. Run CD-HIT.sh
+### Step 3. Run CD-HIT.sh   with (-c 1 -s 1)
 Before running this script, needs to:
 1. copy **aligned_gene_sequences** folder (from panaroo) to the directory where this script will run from.
 2. run **remove_gap_in_alnfas.sh** to remove gap within each .aln.fa file. (Because CD-HIT don't like "-" character).
