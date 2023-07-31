@@ -1,5 +1,7 @@
 # Regulator_mutation_scripts
-Assume had already run Abricate to identify the presence and absence of each regulator genes within a population.
+Scripts used to extract regulator genes, and identify and classify mutation of the extracted regulator gene.
+
+Assume had already run Abricate to identify the presence and absence of regulator genes of interest, because these scripts are relying on the Abricate output.
 
 ### Step 1. Run get_locus_tag.sh
 The gene names annotated by Abricate using self-made database is different to annotation by prokka and panaroo, thus it is important to make sure that the nomenclatures are consistent before running these scripts.
