@@ -54,7 +54,7 @@ Can use: **for file in .clstr; do clstr2txt.pl ${file} > ${file%.clstr}.txt; don
 
 **blastp.sh** will compare protein sequences for each Cluster's representative ERRs. The output can be found in **blastp_out** folder. 
 
-**characterise_mutation_type.sh** will characterise mutations into three sub-categories, Synonymous_mutation, Nonsynonymous_mutation, and other_mutation. The result can be found in **characterise_mutation_type.txt**
+**characterise_mutation_type.sh** will characterise mutations into three sub-categories, Synonymous_mutation, Nonsynonymous_mutation, and other_mutation. Can also count the number of Amino Acid substitution/difference. The result can be found in **summary_of_mutation.txt**. 
 
 **ready_for_R.sh** helps convert and concatenate **.clstr** file in more R friendly format.
 It is recommended to copy all **.clstr** to an empty folder that contain **ready_for_R.sh**, because this script will produce many many .csv files.
