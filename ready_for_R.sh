@@ -25,3 +25,5 @@ less ${file} | tr '\t' ',' > ${file%.txt}.csv;
 done
 
 rm *.txt
+
+## add more "grep -Pzo" if there is more than 3 Clusters
