@@ -38,7 +38,7 @@ Set threshold parameter -c and -s to 1 is to make sure that all sequences within
 
 Can use: **for file in .clstr; do clstr2txt.pl ${file} > ${file%.clstr}.txt; done** to turn .clstr into a table. 
 
-If want to analysis Clustering at protein level, could run **protein_CD-HIT.sh**, this scripts can automatically extract nuceleotide sequence, translate it into peptide sequence and clustering using CD-HIT 
+**If want to analysis Clustering at protein level, could run **protein_CD-HIT.sh**, this scripts can automatically extract nuceleotide sequence, translate it into peptide sequence and clustering using CD-HIT**
 
 ### Step 4. post-processing CD-HIT result
 
