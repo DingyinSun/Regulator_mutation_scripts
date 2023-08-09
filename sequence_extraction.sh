@@ -23,8 +23,14 @@ do
 name1=${file%_hit_ID.list}
 name2=${name1#sequence_ID_list/}
 annotated_name=$(grep ${name2} ../get_annotated_name/annotated_name_list.txt | cut -f2)
-seqtk subseq ../CD-HIT/aligned_gene_sequences/${annotated_name}.aln.fas ${file} > sequence_ID_list/${name2}.fa;
+  while read -r p;
+  do
+  echo "${p}" > name.lst
+  seqtk subseq ../CD-HIT/aligned_gene_sequences/${annotated_name}.aln.fas name.lst >> sequence_ID_list/${name2}.fa
+  rm name.lst
+  done < ${file}
 done
+
 
 wait
 
